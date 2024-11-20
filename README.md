@@ -3,7 +3,7 @@
 1) Criar um repositório para o projeto no `GitHub` e iniciar um `Codespace`.
 
 2) No `Codespace`, instalar a extensão (plugin) VS Code `SQLite Viewer for VS Code`:
-![alt: extensão (plugin) SQLite Viewer for VS Code](SQLiteViewerForVSCode.png)
+![Alt: extensão (plugin) SQLite Viewer for VS Code](SQLiteViewerForVSCode.png)
 
 3) No `Codespace`, criar a estrura de diretório:
 ```
@@ -76,7 +76,6 @@ public class Main {
 }
 ```
 
-
 5) Criar o arquivo `pom.xml` com o conteúdo abaixo para projetos que usam `Maven` no diretório raiz do projeto:
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -131,17 +130,19 @@ public class Main {
 
 ```
  
- 5) Instalar todas as dependências do projeto `Maven` listadas no arquivo `pom.xml`:
+ 6) Instalar todas as dependências do projeto `Maven` listadas no arquivo `pom.xml`:
 ```
   mvn clean install
 ```
 
- 6) Compilar o projeto:
+ 7) Compilar o projeto:
  ```
   mvn clean compile
  ```
 
- 7) Executar o projeto:
+ 8) Executar o projeto:
  ```
   mvn exec:java -Dexec.mainClass="Main"
  ```
+ 9) Clicar no arquivo `teste.db`. No painel lateral direito, clicar na tabela `usuario`. Observar os registros inseridos na tabela.
+![Alt: registros da tabela usuário.](TabelaUsuario.png)
