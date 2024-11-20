@@ -57,3 +57,7 @@
 
 ```
  
+ 3) Compilar o projeto:
+ ```
+  mvn compile
+ ```
