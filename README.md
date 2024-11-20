@@ -3,7 +3,7 @@
 1) Criar um repositório público para o projeto no `GitHub`. Ao criar o projeto, marcar as opções `Public` e `Add a README file`. No item `Add .gitignore`, selecionar a opção `Maven`. Em seguida, clicar no botão `Code` e iniciar um `Codespace` clicando em `Create a codespace on main`.
 
 2) No `Codespace`, instalar a extensão (_plugin_) VS Code `SQLite Viewer for VS Code`:
-![Alt: extensão (plugin) SQLite Viewer for VS Code](SQLiteViewerForVSCode.png)
+![Alt: extensão (plugin) SQLite Viewer for VS Code.](SQLiteViewerForVSCode.png)
 
 3) No `Codespace`, criar a estrura de diretório:
 ```
@@ -75,6 +75,9 @@ public class Main {
     }
 }
 ```
+
+5) No `Codespace`, instalar a extensão (_plugin_) VS Code `Extension Pack for Java`:
+![Alt: Extension Pack for Java.](ExtensionPackForJava.png)
 
 5) Criar o arquivo `pom.xml` com o conteúdo abaixo para projetos que usam `Maven` no diretório raiz do projeto:
 ```xml
@@ -151,3 +154,10 @@ public class Main {
 
  10) Clicar no arquivo `teste.db`. No painel lateral direito, clicar na tabela `usuario`. Observar os registros inseridos na tabela:
 ![Alt: registros da tabela usuário.](TabelaUsuario.png)
+
+11) Executar:
+```
+  git add .
+  git commit -m "mensagem"
+  git push
+```
