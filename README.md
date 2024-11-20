@@ -9,7 +9,7 @@
 
 3) Criar o arquivo `Main.java` dentro de `src/main/java`.
 
-4) Criar o arquivo pom.xml com o conteúdo abaixo para projetos que usam Maven:
+4) Criar o arquivo pom.xml com o conteúdo abaixo para projetos que usam Maven no diretório raiz do projeto:
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
