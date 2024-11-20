@@ -1,6 +1,6 @@
 # java-sqlite-01
 
-1) Criar um repositório para o projeto no `GitHub` e iniciar um `Codespace`.
+1) Criar um repositório público para o projeto no `GitHub`. Ao criar o projeto, marcar as opções `Public` e `Add a README file`. No item `Add .gitignore`, selecionar a opção `Maven`. Em seguida, clicar no botão `Code` e iniciar um `Codespace` clicando em `Create a codespace on main`.
 
 2) No `Codespace`, instalar a extensão (plugin) VS Code `SQLite Viewer for VS Code`:
 ![Alt: extensão (plugin) SQLite Viewer for VS Code](SQLiteViewerForVSCode.png)
@@ -146,7 +146,7 @@ public class Main {
  ```
  
  9) Saída:
- 
+
  ![Alt: saída do programa](SaidaDoPrograma.png)
 
  10) Clicar no arquivo `teste.db`. No painel lateral direito, clicar na tabela `usuario`. Observar os registros inseridos na tabela:
