@@ -2,19 +2,82 @@
 
 1) Criar um repositório para o projeto no GitHub e iniciar um Codespace.
 
-2) No Codespace, instalar o plugin VS Code `SQLite Viewer for VS Code`:
+2) No Codespace, instalar a extensão (plugin) VS Code `SQLite Viewer for VS Code`:
+![alt: extensão (plugin) SQLite Viewer for VS Code](SQLiteViewerForVSCode1.png)
 
-![alt SQLite Viewer for VS Code](SQLiteViewerForVSCode1.png)
-
-2) No Codespace, criar a estrura de diretório:
+3) No Codespace, criar a estrura de diretório:
 ```
   src/main/java
 ```
 
-3) Criar o arquivo `Main.java` dentro de `src/main/java`.
+4) Criar o arquivo `Main.java` dentro de `src/main/java` com o conteúdo abaixo:
+```java
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
-4) Criar o arquivo pom.xml com o conteúdo abaixo para projetos que usam Maven no diretório raiz do projeto:
+public class Main {
+    public static void main(String[] args) {
+        Connection connection = null;
 
+        try {
+            // Conectar ao banco de dados SQLite:
+            connection = DriverManager.getConnection("jdbc:sqlite:teste.db");
+            System.out.println("Conexão com SQLite estabelecida!");
+
+            // Criar uma tabela (usuario):
+            String createTableSQL = 
+            """
+               CREATE TABLE IF NOT EXISTS usuario (
+                  id INTEGER PRIMARY KEY AUTOINCREMENT, 
+                  nome VARCHAR(256) NOT NULL, 
+                  nascimento TEXT
+               );
+            """;
+
+            // Criar e executar uma declaração SQL:
+            Statement statement = connection.createStatement();
+            statement.execute(createTableSQL);
+            System.out.println("Tabela 'usuario' criada ou já existe.");
+
+            // Inserir dados na tabela 'usuario':
+            String insertSQL = 
+            """
+               INSERT INTO usuario (nome, nascimento) VALUES 
+               ('Ana', '2000-06-03'), 
+               ('Bruna', '2001-02-17'),
+               ('Carlos', '2002-04-21'),
+               ('Daniel', '2003-10-30');
+            """;
+            statement.execute(insertSQL);
+            System.out.println("Dados inseridos na tabela 'usuario'.");
+
+            // Consultar dados da tabela 'usuario':
+            String selectSQL = "SELECT * FROM usuario;";
+            ResultSet resultSet = statement.executeQuery(selectSQL);
+            while (resultSet.next()) {
+                System.out.println("ID: " + resultSet.getInt("id") + 
+                                   ", Nome: " + resultSet.getString("nome") +
+                                   ", Nascimento: " + resultSet.getString("nascimento"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+```
+
+
+5) Criar o arquivo `pom.xml` com o conteúdo abaixo para projetos que usam Maven no diretório raiz do projeto:
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -68,7 +131,7 @@
 
 ```
  
- 5) Instalar todas as dependências do projeto Maven listadas no arquivo pom.xml:
+ 5) Instalar todas as dependências do projeto Maven listadas no arquivo `pom.xml`:
 ```
   mvn clean install
 ```
