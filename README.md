@@ -2,6 +2,10 @@
 
 1) Criar um repositório para o projeto no GitHub e iniciar um Codespace.
 
+2) No Codespace, instalar o plugin VS Code `SQLite Viewer for VS Code`:
+
+![alt text](image.png)
+
 2) No Codespace, criar a estrura de diretório:
 ```
   src/main/java
