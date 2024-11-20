@@ -3,7 +3,7 @@
 1) Criar um repositório para o projeto no GitHub e iniciar um Codespace.
 
 2) No Codespace, instalar a extensão (plugin) VS Code `SQLite Viewer for VS Code`:
-![alt: extensão (plugin) SQLite Viewer for VS Code](SQLiteViewerForVSCode1.png)
+![alt: extensão (plugin) SQLite Viewer for VS Code](SQLiteViewerForVSCode.png)
 
 3) No Codespace, criar a estrura de diretório:
 ```
