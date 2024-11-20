@@ -1,13 +1,15 @@
 # java-sqlite-01
 
-1) Criar a estrura de diretório:
+1) Iniciar um GitHub Codespace.
+
+2) Criar a estrura de diretório:
 ```
   src/main/java
 ```
 
-2) Criar o arquivo `Main.java` dentro de `src/main/java`.
+3) Criar o arquivo `Main.java` dentro de `src/main/java`.
 
-3) Criar o arquivo pom.xml com o conteúdo abaixo para projetos que usam Maven:
+4) Criar o arquivo pom.xml com o conteúdo abaixo para projetos que usam Maven:
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -62,17 +64,17 @@
 
 ```
  
- 4) Instalar todas as dependências do projeto Maven listadas no arquivo pom.xml:
+ 5) Instalar todas as dependências do projeto Maven listadas no arquivo pom.xml:
 ```
   mvn clean install
 ```
 
- 5) Compilar o projeto:
+ 6) Compilar o projeto:
  ```
   mvn compile
  ```
 
- 6) Executar o projeto:
+ 7) Executar o projeto:
  ```
   mvn exec:java -Dexec.mainClass="Main"
  ```
