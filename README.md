@@ -1,11 +1,11 @@
 # java-sqlite-01
 
-1) Criar um repositório para o projeto no GitHub e iniciar um Codespace.
+1) Criar um repositório para o projeto no `GitHub` e iniciar um `Codespace`.
 
-2) No Codespace, instalar a extensão (plugin) VS Code `SQLite Viewer for VS Code`:
+2) No `Codespace`, instalar a extensão (plugin) VS Code `SQLite Viewer for VS Code`:
 ![alt: extensão (plugin) SQLite Viewer for VS Code](SQLiteViewerForVSCode.png)
 
-3) No Codespace, criar a estrura de diretório:
+3) No `Codespace`, criar a estrura de diretório:
 ```
   src/main/java
 ```
@@ -77,7 +77,7 @@ public class Main {
 ```
 
 
-5) Criar o arquivo `pom.xml` com o conteúdo abaixo para projetos que usam Maven no diretório raiz do projeto:
+5) Criar o arquivo `pom.xml` com o conteúdo abaixo para projetos que usam `Maven` no diretório raiz do projeto:
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -131,7 +131,7 @@ public class Main {
 
 ```
  
- 5) Instalar todas as dependências do projeto Maven listadas no arquivo `pom.xml`:
+ 5) Instalar todas as dependências do projeto `Maven` listadas no arquivo `pom.xml`:
 ```
   mvn clean install
 ```
