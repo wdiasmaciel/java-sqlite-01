@@ -5,7 +5,7 @@
   src/main/java
 ```
 
-2) Criar o arquivo Main.java dentro de `src/main/java`.
+2) Criar o arquivo `Main.java` dentro de `src/main/java`.
 
 3) Criar o arquivo pom.xml com o conteúdo abaixo para projetos que usam Maven:
 
