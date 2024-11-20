@@ -158,6 +158,12 @@ public class Main {
 12) Executar:
 ```
   git add .
+```
+
+```
   git commit -m "mensagem"
+```
+
+```
   git push
 ```
