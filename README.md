@@ -61,3 +61,8 @@
  ```
   mvn compile
  ```
+
+ 4) Executar o projeto:
+ ```
+  mvn exec:java -Dexec.mainClass="Main"
+ ```
