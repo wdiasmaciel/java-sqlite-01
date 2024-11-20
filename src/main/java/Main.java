@@ -30,7 +30,7 @@ public class Main {
             // Inserir dados na tabela 'usuario':
             String insertSQL = 
             """
-               INSERT INTO usuario (nome) VALUES 
+               INSERT INTO usuario (nome, nascimento) VALUES 
                ('Ana', '2000-06-03'), 
                ('Bruna', '2001-02-17'),
                ('Carlos', '2002-04-21'),

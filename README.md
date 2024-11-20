@@ -1,8 +1,8 @@
 # java-sqlite-01
 
-1) Iniciar um GitHub Codespace.
+1) Criar um repositório para o projeto no GitHub e iniciar um Codespace.
 
-2) Criar a estrura de diretório:
+2) No Codespace, criar a estrura de diretório:
 ```
   src/main/java
 ```
@@ -20,8 +20,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -39,8 +39,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>15</source>
+                    <target>15</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -71,7 +71,7 @@
 
  6) Compilar o projeto:
  ```
-  mvn compile
+  mvn clean compile
  ```
 
  7) Executar o projeto:
