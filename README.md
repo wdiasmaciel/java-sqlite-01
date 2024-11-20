@@ -146,6 +146,7 @@ public class Main {
  ```
  
  9) Saída:
+ 
  ![Alt: saída do programa](SaidaDoPrograma.png)
 
  10) Clicar no arquivo `teste.db`. No painel lateral direito, clicar na tabela `usuario`. Observar os registros inseridos na tabela:
