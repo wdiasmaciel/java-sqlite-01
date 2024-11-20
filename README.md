@@ -57,12 +57,17 @@
 
 ```
  
- 3) Compilar o projeto:
+ 3) Instalar todas as dependências do projeto Maven listadas no arquivo pom.xml:
+```
+  mvn clean install
+```
+
+ 4) Compilar o projeto:
  ```
   mvn compile
  ```
 
- 4) Executar o projeto:
+ 5) Executar o projeto:
  ```
   mvn exec:java -Dexec.mainClass="Main"
  ```
