@@ -4,7 +4,7 @@
 
 2) No Codespace, instalar o plugin VS Code `SQLite Viewer for VS Code`:
 
-![alt text](image.png)
+![alt SQLite Viewer for VS Code](SQLiteViewerForVSCode.png)
 
 2) No Codespace, criar a estrura de diretório:
 ```
