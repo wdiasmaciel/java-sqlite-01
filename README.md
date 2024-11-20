@@ -144,5 +144,9 @@ public class Main {
  ```
   mvn exec:java -Dexec.mainClass="Main"
  ```
- 9) Clicar no arquivo `teste.db`. No painel lateral direito, clicar na tabela `usuario`. Observar os registros inseridos na tabela.
+ 
+ 9) Saída:
+ ![Alt: saída do programa](SaidaDoPrograma.png)
+
+ 10) Clicar no arquivo `teste.db`. No painel lateral direito, clicar na tabela `usuario`. Observar os registros inseridos na tabela:
 ![Alt: registros da tabela usuário.](TabelaUsuario.png)
